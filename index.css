@@ -1090,6 +1090,7 @@ body {
 
     #footerDetails {
         width: 50%;
+        margin: 0;
     }
 
     #footerDetails br:first-of-type {
