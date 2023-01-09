@@ -1,9 +1,9 @@
 function init() {
     let margin = 100;
-
+    
     if (window.screen.width <= 600) {
         margin = 70;
-    } else {
+    } else if (window.screen.width > 992) {
         document.querySelectorAll('.panel').forEach(e => {
             if (e.id != 'project') {
                 e.style.height = `${window.innerHeight - margin}px`;
@@ -21,8 +21,14 @@ function init() {
 function moveToPanel(panel, isMobile) {
     const element = document.getElementById(panel).offsetTop;
 
+    let margin = 100;
+
+    if (window.screen.width < 992) {
+        margin = 70;
+    }
+
     window.scrollTo({ 
-        top: element - 100,
+        top: element - margin,
         behavior: 'smooth'
     });
 
@@ -46,28 +52,7 @@ function goToLink(url) {
         url = 'https://github.com/Murnster';
     } else if (url == 'linkedin') {
         url = 'https://www.linkedin.com/in/ryanmurney/';
-    } else if (url == 'gmail') {
-        
     }
 
     window.open(url, '_blank');
 }
-
-// function sendEmail() {
-//     const name = document.getElementById('contactName'); 
-//     const email = document.getElementById('contactEmail'); 
-//     const phone = document.getElementById('contactPhone'); 
-//     const message = document.getElementById('contactMessage');
-
-//     if (name.value == '') {
-//         name.focus();
-//     } else if (email.value == '') {
-//         email.focus();
-//     } else if (phone.value == '') {
-//         phone.focus();
-//     } else if (message.value) {
-//         message.focus();
-//     } else {
-//         emailjs.send('', '');
-//     }
-// }

@@ -11,13 +11,8 @@
             })();
         </script>
         <script type="text/javascript">
-            console.log('script');
             setTimeout(() => {
-                console.log('timeout');
-                console.log(document.getElementById('contactPanelBtn'));
                 document.getElementById('contactPanelBtn').addEventListener('click', function() {
-                    console.log('click function');
-
                     const name = document.getElementById('contactName'); 
                     const email = document.getElementById('contactEmail'); 
                     const phone = document.getElementById('contactPhone'); 
@@ -32,7 +27,6 @@
                     } else if (message.value == '') {
                         message.focus();
                     } else {
-                        console.log('here');
                         emailjs.send('service_j3cty7o', 'template_utkd0fx', {
                             name: name.value,
                             email: email.value,
@@ -69,14 +63,13 @@
         <div id="container">
             <div id="home" class="panel">
                 <div id="socialMedia">
-                    <span onclick="goToLink('linkedin');""><i class="fa-brands fa-linkedin fa-3x"></i></span>
+                    <span onclick="goToLink('linkedin');"><i class="fa-brands fa-linkedin fa-3x"></i></span>
                     <span onclick="goToLink('git');"><i class="fa-brands fa-square-github fa-3x"></i></span>
-                    <span onclick="moveToPanel('contact')" ><i class="fa-solid fa-envelope fa-3x"></i></span>
                 </div>
                 <div class="homePanelBody">
-                    <div class="homePanelHeading">HI, I'M RYAN MURNEY</div>
+                    <div class="homePanelHeading">HEY, I'M RYAN MURNEY!</div>
                     <div class="homePanelSubHeading">
-                        A software developer focused on creating the front-end of Websites and Web Applications that leads to high user satisfication and fulfills their requirements
+                        I am a Software Developer based in Halifax, Nova Scotia. Web Development is my passion and I strive to create high-quality interfaces with intuitive user design. I am a graduate of Acadia University with a degree in Computer Science specializing in Software Development!
                     </div>
                     <div id="homePanelBtn" onclick="moveToPanel('project')">PROJECTS</div>
                 </div>
@@ -95,11 +88,11 @@
                         <div class="aboutBodyHeader">A little bit about me!</div>
                         <br>
                         <div class="aboutBodyContent">
-                            I am a Frontend Web Developer that creates the Front-end of Websites and Web Applications that leads to high user satisfication and fulfills their requirements. You can see some of the things I have worked on in the Projects section.
+                            I am a Software Developer based in Halifax, Nova Scotia. Web Development is my passion and I strive to create high-quality interfaces with intuitive user design. You can see some of the things I have worked on in the Projects section.
                             <br><br>
-                            Currently I am working full-time as a Full Stack Web Developer in Nova Scotia, Canada. In 2022, I completed my undergraduate degree in Applied Computer Science, specializing in Software Development. 
+                            Currently, I am working full-time as a Full Stack Web Developer in Nova Scotia, Canada. In 2022, I completed my undergraduate degree in Applied Computer Science, specializing in Software Development.
                             <br><br>
-                            I'm open to small opportunities on the side where I can create, learn and help people with their website. If you have a opportunity that matches my skills and experience then please don't hesitate to contact me!
+                            I'm open to opportunities in my spare time where I can create, learn and help people build their own designed website without the pain of doing it! If you have a opportunity that matches my skills and experience then please don't hesitate to contact me!
                         </div>
                     </div>
                     <div class="aboutSkills">
@@ -134,8 +127,8 @@
                     </div>
                     <div class="projectDesc">
                         <div class="aboutBodyHeader">SimpleSport</div>
-                        <br><br>
-                        <div class="aboutBodyContent">SimpleSport is a team management web application that I built for my Capstone Project of my degree. I learned technologies such as React and Express to create it</div>
+                        <br><br class="browserBr">
+                        <div class="aboutBodyContent">SimpleSport is a sports team management web application that I built for my Capstone Project of my degree. I used popular technologies such as React and Express in order to create it to expand my skillset.</div>
                     </div>
                 </div>
                 <div class="projectRow">
@@ -144,8 +137,8 @@
                     </div>
                     <div class="projectDesc">
                         <div class="aboutBodyHeader">Catan Board Generator</div>
-                        <br><br>
-                        <div class="aboutBodyContent">Catan Board Generator was one of my first projects build to create a board for the game Settlers of Catan. I learned how to make compact logical functions in order to make it. This project is where I learned how loops and iteration make fantastic code.</div>
+                        <br><br class="browserBr">
+                        <div class="aboutBodyContent">The Catan Board Generator was one of my first projects which builds a board for the game Settlers of Catan. It generates a fully randomized board for Catan players so that they do not have to!</div>
                     </div>
                 </div>
             </div>
@@ -188,9 +181,8 @@
                 <div id="footerSocials">
                     <div class="footerTitle">SOCIALS</div>
                     <br>
-                    <span><i class="fa-brands fa-linkedin-in fa-3x"></i></span>
-                    <span><i class="fa-brands fa-github fa-3x"></i></span>
-                    <span><i class="fa-solid fa-envelope fa-3x"></i></span>
+                    <span onclick="goToLink('linkedin');"><i class="fa-brands fa-linkedin-in fa-3x"></i></span>
+                    <span onclick="goToLink('git');"><i class="fa-brands fa-github fa-3x"></i></span>
                 </div>
             </div>
             <div id="footerEnd">
