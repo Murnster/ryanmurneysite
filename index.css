@@ -142,7 +142,7 @@ body {
 
 #home {
     justify-content: space-between;
-    background-image: url("portfoliobg.jpg");
+    background-image: url("src/portfoliobg.jpg");
     background-size: cover;
     justify-content: center;
 }
@@ -278,6 +278,7 @@ body {
     background-color: lightgray;
     padding: 20px;
     width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .murneyInput {
@@ -331,6 +332,8 @@ body {
     font-weight: bold;
     width: 25%;
     text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #footer {
@@ -375,12 +378,59 @@ body {
     text-align: center;
 }
 
-#socialMedia span:hover, #messageMeHelper:hover {
-    background: skyblue;
+.toast {
+    position: fixed;
+    display: flex;
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    width: 30%;
+    z-index: 9;
+    background: white;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transform: translateX(5000px);
+    transition: transform 1.5s;
 }
 
-#headerName:hover, .headerItem:hover {
-    color: skyblue;
+.toast[active] {
+    transform: translateX(0px);
+    transition: transform 1.5s;
+}
+
+.successToastHightlight {
+    height: 85%;
+    width: 5px;
+    margin: 15px 0px 15px 10px;
+    background: #4BB543;
+}
+
+.successToastIcon {
+    padding: 15px;
+    color: #4BB543;
+}
+
+.errorToastHightlight {
+    height: 100%;
+    width: 10px;
+    background: #FF0000;
+}
+
+.errorToastIcon {
+    padding: 15px;
+    color: #FF0000;
+}
+
+.toastText {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.toastText div:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -524,6 +574,11 @@ body {
 
     #footerDetails br:first-of-type {
         display: none;
+    }
+
+    .toast {
+        width: 80%;
+        height: 115px;
     }
 }
 
@@ -673,6 +728,10 @@ body {
     #footerDetails br:first-of-type {
         display: none;
     }
+
+    .toast {
+        width: 80%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -821,6 +880,10 @@ body {
     #footerDetails br:first-of-type {
         display: none;
     }
+
+    .toast {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -968,6 +1031,10 @@ body {
     #footerDetails br:first-of-type {
         display: none;
     }
+
+    .toast {
+        width: 80%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1096,9 +1163,30 @@ body {
     #footerDetails br:first-of-type {
         display: block;
     }
+
+    #socialMedia span:hover, #messageMeHelper:hover {
+        background: skyblue;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    
+    #headerName:hover, .headerItem:hover {
+        color: skyblue;
+    }
+
+    #homePanelBtn:hover {
+        box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+    }
+
+    #contactPanelBtn:hover {
+        box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+    }
+
+    .aboutSkillItem:hover {
+        box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+    }
+
+    .toast {
+        width: 30%;
+    }
+
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-
-} */

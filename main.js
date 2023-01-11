@@ -56,3 +56,24 @@ function goToLink(url) {
 
     window.open(url, '_blank');
 }
+
+function toast(success) {
+    let toast;
+
+    if (success) {
+        toast = document.getElementById('successToast');
+    } else {
+        toast = document.getElementById('errorToast')
+    }
+
+    toast.setAttribute('active', '');
+
+    const toastTimeout = setTimeout(() => {
+        toast.removeAttribute('active');
+    }, 7500);
+
+    toast.onclick = function() {
+        clearTimeout(toastTimeout);
+        toast.removeAttribute('active');
+    }
+}

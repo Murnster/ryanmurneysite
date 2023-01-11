@@ -32,12 +32,18 @@
                             email: email.value,
                             phone: phone.value,
                             message: message.value
-                        }, 'dK3Lze1u3Hmegsnoo');
-
-                        name.value = '';
-                        email.value = '';
-                        phone.value= '';
-                        message.value = '';
+                        }, 'dK3Lze1u3Hmegsnoo').then(
+                            function(response) {
+                                toast(true);
+                                name.value = '';
+                                email.value = '';
+                                phone.value= '';
+                                message.value = '';
+                            },
+                            function(error) {
+                                toast(false);
+                            }
+                        );
                     }
                 });
             }, 100);
@@ -47,7 +53,7 @@
     <body onload="init();">
         <div id="header">
             <div class="headerHalf">
-                <div id="headerAvatar" onclick="moveToPanel('home')"><img src="me.png" alt=""></div>
+                <div id="headerAvatar" onclick="moveToPanel('home')"><img src="src/me.png" alt=""></div>
                 <div id="headerName" onclick="moveToPanel('home')">RYAN MURNEY</div>
             </div>
             <div id="browserHeader" class="headerHalf">
@@ -69,7 +75,7 @@
                 <div class="homePanelBody">
                     <div class="homePanelHeading">HEY, I'M RYAN MURNEY!</div>
                     <div class="homePanelSubHeading">
-                        I am a Software Developer based in Halifax, Nova Scotia. Web Development is my passion and I strive to create high-quality interfaces with intuitive user design. I am a graduate of Acadia University with a degree in Computer Science specializing in Software Development.
+                        I am a Software Developer based in Halifax, Nova Scotia. Web Development is my passion and I strive to create high-quality interfaces with intuitive user design. I am a graduate of Acadia University with a degree in Computer Science, specializing in Software Development.
                     </div>
                     <div id="homePanelBtn" onclick="moveToPanel('project')">PROJECTS</div>
                 </div>
@@ -123,7 +129,7 @@
                 </div>
                 <div class="projectRow">
                     <div class="projectImg">
-                        <img src="simplesportmock.png" alt="">
+                        <img src="src/simplesportmock.png" alt="">
                     </div>
                     <div class="projectDesc">
                         <div class="aboutBodyHeader">SimpleSport</div>
@@ -133,7 +139,7 @@
                 </div>
                 <div class="projectRow">
                     <div class="projectImg">
-                        <img src="catanmock.png" alt="">
+                        <img src="src/catanmock.png" alt="">
                     </div>
                     <div class="projectDesc">
                         <div class="aboutBodyHeader">Catan Board Generator</div>
@@ -197,6 +203,22 @@
             <div class="mobileMenuRow" onclick="moveToPanel('about', true)">ABOUT</div>
             <div class="mobileMenuRow" onclick="moveToPanel('project', true)">PROJECTS</div>
             <div class="mobileMenuRow" onclick="moveToPanel('contact', true)">CONTACT</div>
+        </div>
+        <div id="successToast" class="toast">
+            <div class="successToastHightlight"></div>
+            <div class="successToastIcon"><span><i class="fa-solid fa-check-circle fa-3x"></i></span></div>
+            <div class="toastText">
+                <div>Message delivered!</div>
+                <div>Hey, thanks for reaching out. I will get back to you as soon as I can!</div>
+            </div>
+        </div>
+        <div id="errorToast" class="toast">
+            <div class="errorToastHightlight"></div>
+            <div class="errorToastIcon"><span><i class="fa-solid fa-check-circle fa-3x"></i></span></div>
+            <div class="toastText">
+                <div>Message failed...</div>
+                <div>Hey, not sure what happened to your message. Please contact me via LinkedIn!</div>
+            </div>
         </div>
     </body>
 </html>
