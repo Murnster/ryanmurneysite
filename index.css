@@ -474,7 +474,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    #mobileMenuRow {
+    .mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -635,7 +635,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    #mobileMenuRow {
+    .mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -791,7 +791,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    #mobileMenuRow {
+    .mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -946,7 +946,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    #mobileMenuRow {
+    .mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
