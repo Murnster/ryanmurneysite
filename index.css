@@ -25,7 +25,7 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-#messageMeHelper {
+.messageMeHelper {
     cursor: pointer;
     position: fixed;
     bottom: 25px;
@@ -40,7 +40,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-#header {
+.header {
     width: 100%;
     height: 100px;
     display: flex;
@@ -72,27 +72,27 @@ body {
     cursor: pointer;
 }
 
-#headerAvatar {
+.headerAvatar {
     width: 64px;
     height: 64px;
     cursor: pointer;
 }
 
-#headerAvatar img {
+.headerAvatar img {
     width: inherit !important;
     height: inherit !important;
 }
 
-#headerName {
+.headerName {
     cursor: pointer;
     margin-left: 15px;
 }
 
-#mobileHeader, #mobileMenu {
+.mobileHeader, #mobileMenu {
     display: none;
 }
 
-#container {
+.container {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -103,11 +103,11 @@ body {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-#container::-webkit-scrollbar {
+.container::-webkit-scrollbar {
     display: none;
 }
   
-#socialMedia {
+.socialMedia {
     position: absolute;
     left: 0;
     top: 20%;
@@ -117,7 +117,7 @@ body {
     z-index: 1;
 }
 
-#socialMedia span {
+.socialMedia span {
     padding: 15px;
     cursor: pointer;
 }
@@ -165,7 +165,7 @@ body {
     font-size: 26px;
 }
 
-#homePanelBtn {
+.homePanelBtn {
     background: skyblue;
     padding: 15px;
     border-radius: 5px;
@@ -182,29 +182,29 @@ body {
     background: #fafafa;
 }
 
-#contactPanel {
+.contactPanel {
     background: #fafafa;
 }
 
-#aboutHeader {
+.panelHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5% 5% 3% 5%;
 }
 
-.aboutTitle {
+.panelTitle {
     font-weight: bold;
     font-size: 38px;
 }
 
-.aboutSubtitle {
+.panelSubtitle {
     font-size: 18px;
     text-align: center;
     padding: 0% 10%;
 }
 
-#aboutBody {
+.aboutBody {
     display: flex;
     justify-content: space-evenly;
     margin: 0% 10% 3%;
@@ -240,7 +240,7 @@ body {
     background: lightgray;
 }
 
-#projectPanel {
+.projectPanel {
     height: fit-content !important;
 }
 
@@ -274,7 +274,7 @@ body {
     padding-bottom: 150px;
 }
 
-#contactForm {
+.contactForm {
     background-color: lightgray;
     padding: 20px;
     width: 40%;
@@ -323,7 +323,7 @@ body {
     justify-content: flex-end;
 }
 
-#contactPanelBtn {
+.contactPanelBtn {
     padding: 20px;
     margin: 10px 0px;
     background: skyblue;
@@ -336,19 +336,19 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-#footer {
+.footer {
     color: white;
     background: black;
     padding: 50px;
 }
 
-#footerBody {
+.footerBody {
     display: flex;
     justify-content: space-between;
     margin: 0% 15%;
 }
 
-#footerDetails {
+.footerDetails {
     width: 50%;
 }
 
@@ -361,12 +361,12 @@ body {
     font-size: 16px;
 }
 
-#footerSocials span {
+.footerSocials span {
     cursor: pointer;
     padding: 5px;
 }
 
-#footerEnd {
+.footerEnd {
     margin: 0% 15%;
     margin-top: 75px;
     border-top: gray solid 1px;
@@ -402,12 +402,12 @@ body {
     height: 85%;
     width: 5px;
     margin: 15px 0px 15px 10px;
-    background: #4BB543;
+    background: .4BB543;
 }
 
 .successToastIcon {
     padding: 15px;
-    color: #4BB543;
+    color: .4BB543;
 }
 
 .errorToastHightlight {
@@ -439,28 +439,28 @@ body {
         width: 80%;
     }
 
-    #header {
+    .header {
         height: 70px;
         font-size: 18px;
     }
 
-    #browserHeader {
+    .browserHeader {
         display: none !important;
     }
 
-    #headerAvatar {
+    .headerAvatar {
         width: 50px;
         height: 50px;
     }
 
-    #mobileHeader {
+    .mobileHeader {
         display: flex;
         width: 20%;
         justify-content: center;
         align-items: center;
     }
     
-    #mobileHeader span {
+    .mobileHeader span {
         cursor: pointer;
     }
 
@@ -474,7 +474,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    .mobileMenuRow {
+    #mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -482,11 +482,11 @@ body {
         font-size: 18px;
     }
 
-    #container {
+    .container {
         margin-top: 70px;
     }
 
-    #socialMedia {
+    .socialMedia {
         display: none;
     }
 
@@ -507,13 +507,13 @@ body {
         font-size: 18px;
     }
 
-    #homePanelBtn {
+    .homePanelBtn {
         width: 40%;
         font-size: 18px;
         margin-top: 12%;
     }
 
-    #aboutBody {
+    .aboutBody {
         flex-direction: column;
     }
 
@@ -548,34 +548,38 @@ body {
         padding-bottom: 50px;
     }
 
-    #contactForm {
+    .contactForm {
         width: 85%;
         margin: 10px;
     }
 
-    #contactPanelBtn {
+    .contactPanelBtn {
         padding: 15px;
         width: 40%;
     }
 
-    #footer {
+    .footer {
         padding: 25px;
     }
 
-    #footerBody {
+    .footerBody {
         flex-direction: column-reverse;
         margin: 0;
     }
 
-    #footerDetails {
+    .footerDetails {
         width: 100%;
         margin-top: 10%;
     }
 
-    #footerDetails br:first-of-type {
+    .footerDetails br:first-of-type {
         display: none;
     }
     
+    .footerEnd {
+        margin-top: 30px;
+    }
+
     .toast {
         width: 80%;
         height: 115px;
@@ -592,7 +596,7 @@ body {
         width: 90%;
     }
 
-    #header {
+    .header {
         height: 70px;
         font-size: 18px;
     }
@@ -601,23 +605,23 @@ body {
         display: none;
     }
 
-    #browserHeader {
+    .browserHeader {
         display: none !important;
     }
 
-    #headerAvatar {
+    .headerAvatar {
         width: 50px;
         height: 50px;
     }
 
-    #mobileHeader {
+    .mobileHeader {
         display: flex;
         width: 10%;
         justify-content: center;
         align-items: center;
     }
     
-    #mobileHeader span {
+    .mobileHeader span {
         cursor: pointer;
     }
 
@@ -631,7 +635,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    .mobileMenuRow {
+    #mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -639,11 +643,11 @@ body {
         font-size: 18px;
     }
 
-    #container {
+    .container {
         margin-top: 70px;
     }
 
-    #socialMedia {
+    .socialMedia {
         display: none;
     }
 
@@ -664,13 +668,13 @@ body {
         font-size: 18px;
     }
 
-    #homePanelBtn {
+    .homePanelBtn {
         width: 40%;
         font-size: 18px;
         margin-top: 12%;
     }
 
-    #aboutBody {
+    .aboutBody {
         flex-direction: column;
     }
 
@@ -705,32 +709,36 @@ body {
         padding-bottom: 50px;
     }
 
-    #contactForm {
+    .contactForm {
         width: 85%;
         margin: 10px;
     }
 
-    #contactPanelBtn {
+    .contactPanelBtn {
         padding: 15px;
         width: 40%;
     }
 
-    #footer {
+    .footer {
         padding: 25px;
     }
 
-    #footerBody {
+    .footerBody {
         flex-direction: column-reverse;
         margin: 0;
     }
 
-    #footerDetails {
+    .footerDetails {
         width: 100%;
         margin-top: 10%;
     }
 
-    #footerDetails br:first-of-type {
+    .footerDetails br:first-of-type {
         display: none;
+    }
+
+    .footerEnd {
+        margin-top: 30px;
     }
 
     .toast {
@@ -744,7 +752,7 @@ body {
         width: 90%;
     }
 
-    #header {
+    .header {
         height: 70px;
         font-size: 18px;
     }
@@ -753,23 +761,23 @@ body {
         display: none;
     }
 
-    #browserHeader {
+    .browserHeader {
         display: none !important;
     }
 
-    #headerAvatar {
+    .headerAvatar {
         width: 50px;
         height: 50px;
     }
 
-    #mobileHeader {
+    .mobileHeader {
         display: flex;
         width: 10%;
         justify-content: center;
         align-items: center;
     }
     
-    #mobileHeader span {
+    .mobileHeader span {
         cursor: pointer;
     }
 
@@ -783,7 +791,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    .mobileMenuRow {
+    #mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -791,11 +799,11 @@ body {
         font-size: 18px;
     }
 
-    #container {
+    .container {
         margin-top: 70px;
     }
 
-    #socialMedia {
+    .socialMedia {
         display: none;
     }
 
@@ -816,13 +824,13 @@ body {
         font-size: 18px;
     }
 
-    #homePanelBtn {
+    .homePanelBtn {
         width: 40%;
         font-size: 18px;
         margin-top: 12%;
     }
 
-    #aboutBody {
+    .aboutBody {
         flex-direction: column;
     }
 
@@ -857,32 +865,36 @@ body {
         padding-bottom: 50px;
     }
 
-    #contactForm {
+    .contactForm {
         width: 85%;
         margin: 10px;
     }
 
-    #contactPanelBtn {
+    .contactPanelBtn {
         padding: 15px;
         width: 40%;
     }
 
-    #footer {
+    .footer {
         padding: 25px;
     }
 
-    #footerBody {
+    .footerBody {
         flex-direction: column-reverse;
         margin: 0;
     }
 
-    #footerDetails {
+    .footerDetails {
         width: 100%;
         margin-top: 10%;
     }
 
-    #footerDetails br:first-of-type {
+    .footerDetails br:first-of-type {
         display: none;
+    }
+
+    .footerEnd {
+        margin-top: 30px;
     }
 
     .toast {
@@ -895,7 +907,7 @@ body {
         width: 90%;
     }
 
-    #header {
+    .header {
         height: 70px;
         font-size: 18px;
     }
@@ -904,23 +916,23 @@ body {
         display: none;
     }
 
-    #browserHeader {
+    .browserHeader {
         display: none !important;
     }
 
-    #headerAvatar {
+    .headerAvatar {
         width: 50px;
         height: 50px;
     }
 
-    #mobileHeader {
+    .mobileHeader {
         display: flex;
         width: 10%;
         justify-content: center;
         align-items: center;
     }
     
-    #mobileHeader span {
+    .mobileHeader span {
         cursor: pointer;
     }
 
@@ -934,7 +946,7 @@ body {
         animation: fadein 0.3s linear;
     }
 
-    .mobileMenuRow {
+    #mobileMenuRow {
         border-top: 0.75px solid gray;
         text-align: end;
         padding: 15px 25px;
@@ -942,11 +954,11 @@ body {
         font-size: 18px;
     }
 
-    #container {
+    .container {
         margin-top: 70px;
     }
 
-    #socialMedia {
+    .socialMedia {
         display: none;
     }
 
@@ -967,13 +979,13 @@ body {
         font-size: 18px;
     }
 
-    #homePanelBtn {
+    .homePanelBtn {
         width: 40%;
         font-size: 18px;
         margin-top: 12%;
     }
 
-    #aboutBody {
+    .aboutBody {
         flex-direction: column;
     }
 
@@ -1008,32 +1020,36 @@ body {
         padding-bottom: 50px;
     }
 
-    #contactForm {
+    .contactForm {
         width: 85%;
         margin: 10px;
     }
 
-    #contactPanelBtn {
+    .contactPanelBtn {
         padding: 15px;
         width: 40%;
     }
 
-    #footer {
+    .footer {
         padding: 25px;
     }
 
-    #footerBody {
+    .footerBody {
         flex-direction: column-reverse;
         margin: 0;
     }
 
-    #footerDetails {
+    .footerDetails {
         width: 100%;
         margin-top: 10%;
     }
 
-    #footerDetails br:first-of-type {
+    .footerDetails br:first-of-type {
         display: none;
+    }
+
+    .footerEnd {
+        margin-top: 30px;
     }
 
     .toast {
@@ -1047,7 +1063,7 @@ body {
         width: 50%;
     }
 
-    #header {
+    .header {
         height: 100px;
         font-size: 20px;
     }
@@ -1056,28 +1072,29 @@ body {
         display: block;
     }
 
-    #browserHeader {
+    .browserHeader {
         display: flex !important;
     }
 
-    #headerAvatar {
+    .headerAvatar {
         width: 64px;
         height: 64px;
     }
 
-    #mobileHeader {
+    .mobileHeader {
         display: none;
+        width: 0%;
     }
 
     #mobileMenu {
         display: none;
     }
 
-    #container {
+    .container {
         margin-top: 100px;
     }
 
-    #socialMedia {
+    .socialMedia {
         display: flex;
     }
 
@@ -1098,13 +1115,13 @@ body {
         font-size: 26px;
     }
 
-    #homePanelBtn {
+    .homePanelBtn {
         width: 20%;
         font-size: 22px;
         margin-top: 5%;
     }
 
-    #aboutBody {
+    .aboutBody {
         flex-direction: row;
     }
 
@@ -1140,48 +1157,48 @@ body {
         padding-bottom: 150px;
     }
 
-    #contactForm {
+    .contactForm {
         width: 40%;
         margin: 0px;
     }
 
-    #contactPanelBtn {
+    .contactPanelBtn {
         padding: 20px;
         width: 25%;
     }
 
-    #footer {
+    .footer {
         padding: 50px;
     }
 
-    #footerBody {
+    .footerBody {
         flex-direction: row;
         margin: 0% 15%;
     }
 
-    #footerDetails {
+    .footerDetails {
         width: 50%;
         margin: 0;
     }
 
-    #footerDetails br:first-of-type {
+    .footerDetails br:first-of-type {
         display: block;
     }
 
-    #socialMedia span:hover, #messageMeHelper:hover {
+    .socialMedia span:hover, .messageMeHelper:hover {
         background: skyblue;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
     
-    #headerName:hover, .headerItem:hover {
+    .headerName:hover, .headerItem:hover {
         color: skyblue;
     }
 
-    #homePanelBtn:hover {
+    .homePanelBtn:hover {
         box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
     }
 
-    #contactPanelBtn:hover {
+    .contactPanelBtn:hover {
         box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
     }
 
@@ -1192,5 +1209,8 @@ body {
     .toast {
         width: 30%;
     }
-
+    
+    .footerEnd {
+        margin-top: 75px;
+    }
 }

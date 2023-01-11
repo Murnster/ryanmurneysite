@@ -51,24 +51,24 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body onload="init();">
-        <div id="header">
+        <div class="header">
             <div class="headerHalf">
-                <div id="headerAvatar" onclick="moveToPanel('home')"><img src="src/me.png" alt=""></div>
-                <div id="headerName" onclick="moveToPanel('home')">RYAN MURNEY</div>
+                <div class="headerAvatar" onclick="moveToPanel('home')"><img src="src/me.png" alt=""></div>
+                <div class="headerName" onclick="moveToPanel('home')">RYAN MURNEY</div>
             </div>
-            <div id="browserHeader" class="headerHalf">
+            <div class="headerHalf browserHeader">
                 <div class="headerItem clickCursor" onclick="moveToPanel('home')">HOME</div>
                 <div class="headerItem" onclick="moveToPanel('about')">ABOUT</div>
                 <div class="headerItem" onclick="moveToPanel('project')">PROJECTS</div>
                 <div class="headerItem" onclick="moveToPanel('contact')">CONTACT</div>
             </div>
-            <div id="mobileHeader" onclick="showMobileMenu();">
+            <div class="mobileHeader" onclick="showMobileMenu();">
                 <span><i class="fa-solid fa-bars fa-lg"></i></span>
             </div>
         </div>
-        <div id="container">
+        <div class="container">
             <div id="home" class="panel">
-                <div id="socialMedia">
+                <div class="socialMedia">
                     <span onclick="goToLink('linkedin');"><i class="fa-brands fa-linkedin fa-3x"></i></span>
                     <span onclick="goToLink('git');"><i class="fa-brands fa-square-github fa-3x"></i></span>
                 </div>
@@ -77,19 +77,19 @@
                     <div class="homePanelSubHeading">
                         I am a Software Developer based in Halifax, Nova Scotia. Web Development is my passion and I strive to create high-quality interfaces with intuitive user design. I am a graduate of Acadia University with a degree in Computer Science, specializing in Software Development.
                     </div>
-                    <div id="homePanelBtn" onclick="moveToPanel('project')">PROJECTS</div>
+                    <div class="homePanelBtn" onclick="moveToPanel('project')">PROJECTS</div>
                 </div>
                 <div class="panelArrow" onclick="moveToPanel('about');">
                     <span><i class="fa-solid fa-chevron-down fa-2x"></i></span>
                 </div>
             </div>
             <div id="about" class="panel">
-                <div id="aboutHeader">
-                    <div class="aboutTitle">ABOUT ME</div>
+                <div class="panelHeader">
+                    <div class="panelTitle">ABOUT ME</div>
                     <div class="murneyDivider"></div>
-                    <div class="aboutSubtitle">In this section you will find more about me and what I can do, my interests, and the technologies I use for software development</div>
+                    <div class="panelSubtitle">In this section you will find more about me and what I can do, my interests, and the technologies I use for software development</div>
                 </div>
-                <div id="aboutBody">
+                <div class="aboutBody">
                     <div class="aboutSummary">
                         <div class="aboutBodyHeader">A little bit about me!</div>
                         <br>
@@ -122,10 +122,10 @@
                 </div>
             </div>
             <div id="project" class="panel">
-                <div id="aboutHeader">
-                    <div class="aboutTitle">PROJECTS</div>
+                <div class="panelHeader">
+                    <div class="panelTitle">PROJECTS</div>
                     <div class="murneyDivider"></div>
-                    <div class="aboutSubtitle">Here you will see some of the projects I have worked on along with some details about each one</div>
+                    <div class="panelSubtitle">Here you will see some of the projects I have worked on along with some details about each one</div>
                 </div>
                 <div class="projectRow">
                     <div class="projectImg">
@@ -149,53 +149,53 @@
                 </div>
             </div>
             <div id="contact">
-                <div id="aboutHeader">
-                    <div class="aboutTitle">CONTACT</div>
+                <div class="panelHeader">
+                    <div class="panelTitle">CONTACT</div>
                     <div class="murneyDivider"></div>
-                    <div class="aboutSubtitle">Please feel free to contact me using the form below and I will respond back at my earliest convience!</div>
+                    <div class="panelSubtitle">Please feel free to contact me using the form below and I will respond back at my earliest convience!</div>
                 </div>
-                <div id="contactForm">
+                <div class="contactForm">
                     <div class="murneyInput">
                         <div class="inputTitle">Name</div>
-                        <input id="contactName" type="text">
+                        <input class="contactName" type="text">
                     </div>
                     <div class="murneyInput">
                         <div class="inputTitle">Email</div>
-                        <input id="contactEmail" type="text">
+                        <input class="contactEmail" type="text">
                     </div>
                     <div class="murneyInput">
                         <div class="inputTitle">Phone Number</div>
-                        <input id="contactPhone" type="text">
+                        <input class="contactPhone" type="text">
                     </div>
                     <div class="murneyInput">
                         <div class="inputTitle">Message</div>
-                        <textarea id="contactMessage" class="bigTextInput"></textarea>
+                        <textarea class="contactMessage" class="bigTextInput"></textarea>
                     </div>
                     <div class="contactPanelFooter">
-                        <div id="contactPanelBtn">SUBMIT</div>
+                        <div class="contactPanelBtn">SUBMIT</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div id="footerBody">
-                <div id="footerDetails">
+        <div class="footer">
+            <div class="footerBody">
+                <div class="footerDetails">
                     <div class="footerTitle">RYAN MURNEY</div>
                     <br><br>
                     <div class="footerSubtitle">I am a Software Developer based in Halifax, Nova Scotia. Web Development is my passion and I strive to create high-quality interfaces with intuitive user design.</div>
                 </div>
-                <div id="footerSocials">
+                <div class="footerSocials">
                     <div class="footerTitle">SOCIALS</div>
                     <br>
                     <span onclick="goToLink('linkedin');"><i class="fa-brands fa-linkedin-in fa-3x"></i></span>
                     <span onclick="goToLink('git');"><i class="fa-brands fa-github fa-3x"></i></span>
                 </div>
             </div>
-            <div id="footerEnd">
+            <div class="footerEnd">
                 <div class="footerEndTag">Made by Ryan Murney</div>
             </div>
         </div>
-        <div id="messageMeHelper" onclick="moveToPanel('contact')">
+        <div class="messageMeHelper" onclick="moveToPanel('contact')">
             <span><i class="fa-solid fa-envelope fa-3x"></i></span>
         </div>
         <div id="mobileMenu" style="display: none;">
