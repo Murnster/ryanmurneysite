@@ -575,10 +575,14 @@ body {
     #footerDetails br:first-of-type {
         display: none;
     }
-
+    
     .toast {
         width: 80%;
         height: 115px;
+    }
+
+    .toastText {
+        width: 66%;
     }
 }
 
