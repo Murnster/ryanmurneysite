@@ -389,7 +389,7 @@ body {
     background: white;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    transform: translateX(5000px);
+    transform: translateX(1000px);
     transition: transform 1.5s;
 }
 
@@ -402,17 +402,18 @@ body {
     height: 85%;
     width: 5px;
     margin: 15px 0px 15px 10px;
-    background: .4BB543;
+    background: #4BB543;
 }
 
 .successToastIcon {
     padding: 15px;
-    color: .4BB543;
+    color: #4BB543;
 }
 
 .errorToastHightlight {
-    height: 100%;
-    width: 10px;
+    height: 85%;
+    width: 5px;
+    margin: 15px 0px 15px 10px;
     background: #FF0000;
 }
 
@@ -421,11 +422,23 @@ body {
     color: #FF0000;
 }
 
+.questionToastHightlight {
+    height: 85%;
+    width: 5px;
+    margin: 15px 0px 15px 10px;
+    background: #FFCC00;
+}
+
+.questionToastIcon {
+    padding: 15px;
+    color: #FFCC00;
+}
+
 .toastText {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 75%;
 }
 
 .toastText div:first-of-type {

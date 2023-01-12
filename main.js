@@ -62,8 +62,10 @@ function toast(success) {
 
     if (success) {
         toast = document.getElementById('successToast');
-    } else {
+    } else if (success === false) {
         toast = document.getElementById('errorToast')
+    } else {
+        toast = document.getElementById('questionToast');
     }
 
     toast.setAttribute('active', '');
@@ -76,4 +78,22 @@ function toast(success) {
         clearTimeout(toastTimeout);
         toast.removeAttribute('active');
     }
+}
+
+function cleanTrolls(string) {
+    const words = string.split(' ');
+    var sendEmail = true;
+    
+    if (string.indexOf('aunt sum') != -1) {
+        sendEmail = false;
+    }
+
+    if (
+        words.indexOf('sum') != -1 ||
+        words.indexOf('bahd') != -1
+    ) {
+        sendEmail = false;
+    }
+
+    return sendEmail;
 }
