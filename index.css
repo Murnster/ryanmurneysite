@@ -254,7 +254,8 @@ body {
 
 .projectImg {
     width: 35%;
-    padding-left: 5%;
+    padding: 1%;
+    border-radius: 10px;
 }
 
 .projectImg img {
@@ -545,7 +546,8 @@ body {
 
     .projectImg {
         width: 90%;
-        padding: 0;
+        padding: 1%;
+        border-radius: 10px;
     }
 
     .projectDesc {
@@ -706,7 +708,8 @@ body {
 
     .projectImg {
         width: 90%;
-        padding: 0;
+        padding: 1%;
+        border-radius: 10px;
     }
 
     .projectDesc {
@@ -862,7 +865,8 @@ body {
 
     .projectImg {
         width: 90%;
-        padding: 0;
+        padding: 1%;
+        border-radius: 10px;
     }
 
     .projectDesc {
@@ -1017,7 +1021,8 @@ body {
 
     .projectImg {
         width: 90%;
-        padding: 0;
+        padding: 1%;
+        border-radius: 10px;
     }
 
     .projectDesc {
@@ -1153,9 +1158,14 @@ body {
 
     .projectImg {
         width: 35%;
-        padding-left: 5%;
+        padding: 1%;
+        border-radius: 10px;
     }
-
+    
+    .projectImg:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+    }
+    
     .projectDesc {
         width: 35%;
         padding: 10px;

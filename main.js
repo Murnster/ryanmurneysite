@@ -52,6 +52,10 @@ function goToLink(url) {
         url = 'https://github.com/Murnster';
     } else if (url == 'linkedin') {
         url = 'https://www.linkedin.com/in/ryanmurney/';
+    } else if (url == 'simplesport') {
+        url = 'https://murnster.github.io/SimpleSport/';
+    } else if (url == 'catan') {
+        url = 'https://murnster.github.io/Web-Catan-Board/';
     }
 
     window.open(url, '_blank');
